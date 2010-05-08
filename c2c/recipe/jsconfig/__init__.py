@@ -32,15 +32,17 @@ Ext.namespace(\'%(namespace)s\');
  * Creates a configuration object (read only).
  */
 %(namespace)s.Config = function() {
+    return {
 
 %(options)s
 
+    }
 }();
 """
                      % {
                          'namespace': self.namespace,
                          'options': ',\n\n'.join(
-                             ["    %s: %s" % i \
+                             ["        %s: %s" % i \
                               for i in self.config.items()]
                          )
                      }
