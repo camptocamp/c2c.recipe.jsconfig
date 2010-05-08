@@ -36,7 +36,7 @@ Ext.namespace(\'%(namespace)s\');
 
 %(options)s
 
-    }
+    };
 }();
 """
                      % {
