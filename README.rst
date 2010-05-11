@@ -23,7 +23,7 @@ from the buildout configuration.
 Download the source code as `archive <http://github.com/camptocamp/c2c.recipe.jsconfig/zipball/master>`_
 or clone the GIT repository::
 
-    git clone http://github.com/camptocamp/c2c.recipe.jsconfig.git c2c.recipe.jsconfig
+    git clone http://github.com/camptocamp/c2c.recipe.jsconfig.git
     
 Then run the setup::
 
@@ -39,7 +39,7 @@ Create a buildout.cfg file which contains the following::
     parts = jsconfig
 
     [jsconfig]
-    recipe = c2c.recipe.jsconfig:default
+    recipe = c2c.recipe.jsconfig
     output = path/to/Config.js
     namespace = App
     key1 = value1
